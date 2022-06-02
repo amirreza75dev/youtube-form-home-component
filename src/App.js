@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import Video from "./video";
+import Sidebar from "./Sidebar";
+import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
+import Search from "./Search";
+import Form from "./Form";
+import { useState } from "react";
+
 
 function App() {
+  const [toggle,setToggle] =useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <Header toggle={toggle} setToggle={setToggle}/>
+      <Switch>
+        <Route exact path="/">
+          <div className="container">
+          <Video />
+          <Sidebar toggle={toggle}/>
+            
+          
+          </div>
+        </Route>
+        <Route exact path="/search/:whatever">
+        <div className="container">
+          <Search />
+          <Sidebar toggle={toggle}/>
+            
+          
+          </div>
+
+        </Route>
+        <Route exact path="/form">
+        <div className="container">
+              <Form />
+            
+          
+          </div>
+
+        </Route>
+      </Switch>
+
+      
+      
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,63 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    background: #F9F9F9;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+   
+
+    background: white;
+    width: 30%;
+    margin: 0 auto ;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+.form form button{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.Form-input{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Form-input label{
+    margin: 10px 0;
+    margin-right: 60px;
+    
+}
+.Form-input input{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    direction: ltr;
+
+    
+}
+
+.Form-input input:invalid[change = "true"] ~ span{
+    display: block;
+    
+}
+
+.Form-input span{
+    margin-right: 50px;
+    color: red;
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .form form{
+        width: 80%;
+    }
+    
+}

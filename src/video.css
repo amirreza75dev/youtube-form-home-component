@@ -1,0 +1,20 @@
+.video{
+    flex: 0.8;
+    margin-right: 20px;
+}
+
+.video h1{
+    background: #F9F9F9;
+}
+.recommended{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:850px) {
+    .video{
+        width: 100%;
+    }
+    
+}

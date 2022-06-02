@@ -1,0 +1,57 @@
+.sidebar{
+    flex: 0.2;
+}
+.sidebar-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+.sidebar-row p{
+    flex: 1;
+    margin-right: 10px;
+}
+.sidebar-icon{
+    margin-right: 10px;
+}
+
+.sidebar hr{
+    margin: 10px 0;
+}
+
+.sidebar-row:hover{
+    background: lightgray;
+    cursor: pointer;
+}
+
+.sidebar-row:hover .sidebar-icon{
+    color: red;
+}
+
+.selected{
+    background: lightgray;
+}
+.selected .sidebar-icon{
+    color:red
+}
+
+
+
+@media screen and (max-width:850px) {
+    .sidebar{
+        
+        
+        display: none;
+    }
+    .show-silde{
+        
+        z-index: 106;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background: white;
+        width: 40%;
+    }
+
+}

@@ -1,0 +1,109 @@
+.search{
+    flex:0.8;
+    background: #F9F9F9;
+
+}
+
+.filter{
+    margin-right: 20px;
+    margin-top: 20px;
+    line-height: 0.5;
+    display: flex;
+    align-items: center;
+}
+.filter p{
+    display: inline;
+    line-height: 1.5;
+}
+.filter span{
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.search hr{
+    margin: 10px 0;
+}
+
+.introduction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.introduction img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.subscribe{
+    display: flex;
+    align-items: center;
+}
+.subscribe button{
+    padding: 10px 20px;
+    margin:  0 10px;
+}
+
+.search-post{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.post img{
+    width: 360px;
+    height: 200px;
+}
+
+.post-des{
+    flex: 1;
+    margin-right: 20px;
+}
+.post-avatar{
+    display: flex;
+    align-items: center;
+}
+
+.post-avatar img{
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 50%;
+}
+
+@media screen and (max-width:700px) {
+
+    .introduction img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .subscribe button{
+        padding: 8px 8px;
+        margin:  0 10px;
+    }
+    .intro-det{
+        font-size: 0.8em;
+    }
+    .post img{
+        width: 160px;
+        height: 100px;
+    }
+    .post-des{
+        font-size: 0.8em;
+    }
+    .post-avatar img{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
